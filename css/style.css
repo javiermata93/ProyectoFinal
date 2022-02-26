@@ -213,7 +213,7 @@ footer{
 }
 
 .footer-logo-img{
-    width: 100%;
+    width: 140px;
 }
 
 .footer-nav{
@@ -646,6 +646,10 @@ input, textarea{
         align-self: center;
         justify-self: center;
         padding: 15px 0px 15px 0px;
+    }
+
+    .footer-logo-img{
+        width: 100%;
     }
     
     .footer-nav{
