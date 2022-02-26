@@ -10,16 +10,17 @@
 
 /* HEADER */
 
-.header{
+/*.header{
     display: flex;
     background-color: white;
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid red;
     padding: 1.5rem 4rem;
-}
+}*/
 
 .header-logo{
+    padding: 15px;
     width: 200px; 
 }
 
@@ -30,9 +31,16 @@ nav{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-weight: 300;
-    font-size: 18px;
-    width: 60%;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#navbarNav{
+    justify-content: right;
+}
+
+.nav-item{
+    padding-right: 20px;
 }
 
 .header-lista li{
@@ -475,7 +483,6 @@ input, textarea{
         justify-content: center;
         align-items: center;
         font-weight: 300;
-        width: 60%;
     }
     
     .header-lista li{
@@ -483,49 +490,18 @@ input, textarea{
         display: inline-block;
         padding: 0rem 0.5rem;
     }
+
+    .navbar-nav{
+        align-items: center;
+    }
     
     .header-button{ 
-        outline: none;
-        border: none;
-        font-family: 'Oswald', sans-serif;
-        background-color: red;
-        color: white;
-        text-transform: uppercase;
-        cursor:pointer;
-        font-size: 10px;
+        font-size: 14px;
         font-weight: 300;
         border-radius: 10px;
         letter-spacing: 2px;
-        padding: 0.1rem 0.5rem;
+        max-width: 300px;
     }
-    
-    .header-button:hover{
-        background-color: rgb(173, 25, 25);
-        -webkit-box-shadow: 3px 3px 10px 3px #ddd;
-        -moz-box-shadow: 3px 3px 10px 3px #ddd;
-        box-shadow: 3px 3px 10px 3px #ddd;
-    }
-    
-    /* unvisited link */
-    .header-menu:link {
-        color: black; 
-    }
-    
-      /* visited link */
-    .header-menu:visited {
-        color: black;
-    }
-    
-      /* mouse over link */
-    .header-menu:hover {
-        color: red;
-    }
-    
-      /* selected link */
-    .header-menu:active {
-        color: rgb(68, 68, 68);
-    }
-    
     
     /* PICTURE */
     
@@ -563,7 +539,7 @@ input, textarea{
         display: flex;
         justify-self: center;
         align-self: center;
-        width: 100%;
+        width: 60%;
     }
     
     .section-servicios-texto{
