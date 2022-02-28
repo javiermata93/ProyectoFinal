@@ -301,8 +301,8 @@ h1{
     font-style: italic;
     color: rgb(173, 25, 25);
     letter-spacing: 2px;
-    font-size: 6vw;
-    text-shadow: 0.14vw 0.14vw black;
+    font-size: calc(20px + 6vw);
+    text-shadow: calc(1px + 0.14vw) calc(1px + 0.14vw) black;
 }
 
 h2{
@@ -313,8 +313,8 @@ h2{
     font-style: italic;
     color: rgb(173, 25, 25);
     letter-spacing: 3px;
-    font-size: 4vw;
-    text-shadow: 0.1vw 0.1vw black;
+    font-size: calc(16px + 4vw);
+    text-shadow: calc(0.7px + 0.1vw) calc(0.7px + 0.1vw) black;
 }
 
 h3{
@@ -325,8 +325,8 @@ h3{
     font-style: italic;
     color: rgb(90, 90, 90);
     letter-spacing: 4px;
-    font-size: 3vw;
-    text-shadow: 0.06vw 0.06vw black;
+    font-size: calc(14px + 3vw);
+    text-shadow: calc(0.5px + 0.06vw) calc(0.5px + 0.06vw) black;
 }
 
 input, textarea{
@@ -464,6 +464,10 @@ input, textarea{
     
     .header-logo{
         width: 200px;
+    }
+
+    .container-fluid{
+        padding: 0;
     }
     
     nav{
