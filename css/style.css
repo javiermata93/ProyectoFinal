@@ -11,15 +11,6 @@
 
 /* HEADER */
 
-/*.header{
-    display: flex;
-    background-color: white;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid red;
-    padding: 1.5rem 4rem;
-}*/
-
 .header-logo{
     padding: 15px;
     width: 200px; 
@@ -38,6 +29,10 @@ nav{
 
 #navbarNav{
     justify-content: flex-end;
+}
+
+.container-fluid{
+    padding: 0px 40px 0px 40px;
 }
 
 .nav-item{
@@ -305,7 +300,7 @@ h1{
     font-weight: 700;
     font-style: italic;
     color: rgb(173, 25, 25);
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     font-size: 6vw;
     text-shadow: 0.14vw 0.14vw black;
 }
@@ -317,7 +312,7 @@ h2{
     font-weight: 700;
     font-style: italic;
     color: rgb(173, 25, 25);
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     font-size: 4vw;
     text-shadow: 0.1vw 0.1vw black;
 }
