@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MATALLER - Carros & Motos</title>
+    <link rel="icon" type="image/x-icon" href="../img/MATALLER_Logo_Ico.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -45,27 +46,35 @@
     <section class="seccion-texto">
             <form action="">
                 <h1 class="animate__animated animate__zoomIn">Contactenos</h1>
-                <label for="select-motivo">Motivo de contacto:</label><br>
 
-<select id="select-motivo">
-    <option value="">Informacion general</option>
-  <option value="volvo">Comprar productos</option>
-  <option value="saab">Presupuesto</option>
-  <option value="mercedes">Cita Reparacion</option>
-  <option value="">Cita Manutención</option>
-  <option value="">Cita Pintura</option>
-</select><br>
-                <label for="nombreyapellido">Nombre y Apellido:</label><br>
-                <input id="nombreyapellido" type="text" placeholder="Ingressar nombre y apellido"><br>
-                <label for="contacto">Contacto:</label><br>
-                <input id="contacto" type="tel" placeholder="Ingressar contacto"><br>
-                <label for="email">E-mail:</label><br>
-                <input id="email" type="text" placeholder="Ingressar e-mail"><br>
-                <label for="mensage">Mensaje:</label><br>
-                <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Ingressar mensaje"></textarea><br>
+                <div class="input-group">
+                    <span class="input-group-text">Nombre & Apellido</span>
+                    <input type="text" aria-label="First name" class="form-control">
+                    <input type="text" aria-label="Last name" class="form-control">
+                </div>
+                
+                <div class="input-group">
+                    <span class="input-group-text">Contacto</span>
+                    <span class="input-group-text">+34</span>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-text">E-mail</span>
+                    <input type="text" class="form-control" aria-label="Username">
+                </div>
+                
+                <div class="input-group">
+                    <span class="input-group-text">Motivo de contacto</span>
+                    <input type="text" aria-label="First name" class="form-control">
+                </div>
+                
+                <div class="input-group">
+                    <span class="input-group-text">Mensaje</span>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>
 
+                <div class="seccion-transparente">
                 <input data-aos="zoom-in" class="btn_estilo1" type="submit" value="Enviar mensaje">
                 <input data-aos="zoom-in" class="btn_estilo1" type="reset" value="Eliminar">
+                </div>
             </form>
     </section>
 

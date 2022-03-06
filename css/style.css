@@ -97,8 +97,14 @@ nav{
 
 .seccion-transparente{
     text-align: center;
-    padding: 70px;
+    padding: 70px 0px 70px 0px;
 }
+
+.seccion-transparente-peq{
+    text-align: center;
+    padding-top: 30px;
+}
+
 
 footer{
     display: grid;
@@ -231,16 +237,15 @@ h3{
     text-shadow: calc(0.5px + 0.06vw) calc(0.5px + 0.06vw) black;
 }
 
-input, textarea, select{
-    width: 80%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
+input, textarea, select, .input-group-text{
     font-family: 'Oswald', sans-serif;
     letter-spacing: 2px;
     font-weight: 400;
-    border-radius: 10px;
-    max-width: 800px;
+}
+
+
+.input-group{
+    padding-top: 20px;
 }
 
 .btn_estilo1{
@@ -361,6 +366,15 @@ input, textarea, select{
     max-width: 350px;
 }
 
+.foto-equipo{
+    object-fit: cover;
+    align-self: center;
+    justify-self: center;
+    border-radius: 50%;
+    height: 200px;
+    max-width: 200px;
+}
+
 .seccion-presupuesto{
     background-color: rgb(235, 235, 235);
     text-align: center;
@@ -442,6 +456,12 @@ input, textarea, select{
 }
 
 
+.card{
+    border-style: none;
+    background-color: transparent;
+}
+
+
 
 
 
@@ -509,8 +529,6 @@ input, textarea, select{
     /* TEXTO */
     
     .seccion-texto{
-        background-color: rgb(235, 235, 235);
-        text-align: center;
         padding: 1rem;
     }
     
@@ -666,12 +684,12 @@ input, textarea, select{
         height: 20px;
     }
     
-    input, textarea{
+  /*  input, textarea{
         width: 100%;
         padding-bottom: 14px;
         box-sizing: border-box;
     }
-
+*/
 
     /* PRODUCTOS - GALERIA */
 
