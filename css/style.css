@@ -303,6 +303,9 @@ input, textarea, select, .input-group-text{
     justify-self: center;
     align-self: center;
     object-fit: cover;
+    -webkit-box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
+    -moz-box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
+    box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
     width: 70%;
     border-radius: 50%;
     max-width: 350px;
@@ -361,6 +364,9 @@ input, textarea, select, .input-group-text{
 
 .foto-servicio{
     object-fit: cover;
+    -webkit-box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
+-moz-box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
+box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
     border-radius: 50%;
     height: 350px;
     max-width: 350px;
@@ -370,6 +376,9 @@ input, textarea, select, .input-group-text{
     object-fit: cover;
     align-self: center;
     justify-self: center;
+    -webkit-box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
+-moz-box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
+box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
     border-radius: 50%;
     height: 200px;
     max-width: 200px;
