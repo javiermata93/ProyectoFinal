@@ -1,0 +1,608 @@
+/* IMPORT FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap');
+@import './variables.scss';
+@import './header';
+@import './footer';
+@import './images';
+@import './sections';
+
+
+
+/* ELEMENTOS GENERALES */
+
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    /*outline: solid 1px red;*/
+}
+
+
+
+body{
+    background-image: radial-gradient(#a6a6a6 0.5px, transparent 0.5px), radial-gradient(#a6a6a6 0.5px, transparent 0.5px);
+    background-size: 29px 29px;
+    background-position: 0 0, 14.5px 14.5px;
+    background-color: #ffffff;
+}
+
+p, label{
+    text-align: center;
+    color: rgb(75, 75, 75);
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding: 30px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
+    color: rgb(173, 25, 25);
+    letter-spacing: 2px;
+    /*font-size: calc(20px + 6vw);*/
+    font-size: clamp(1rem, 12vw, 4.5rem);
+    text-shadow: calc(1px + 0.14vw) calc(1px + 0.14vw) black;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
+    color: rgb(173, 25, 25);
+    letter-spacing: 3px;
+    font-size: clamp(1rem, 10vw, 3.5rem);
+    text-shadow: calc(0.7px + 0.1vw) calc(0.7px + 0.1vw) black;
+}
+
+h3{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: italic;
+    color: rgb(90, 90, 90);
+    letter-spacing: 4px;
+    font-size: clamp(1rem, 8vw, 2.5rem);
+    text-shadow: calc(0.5px + 0.06vw) calc(0.5px + 0.06vw) black;
+}
+
+input, textarea, select, .input-group-text{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+
+.input-group{
+    padding-top: 20px;
+}
+
+.btn_estilo1{
+    outline: 1px;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    padding: 0.5rem 1.5rem;
+    background-color:gray;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor:pointer;
+    }
+
+.btn_estilo1:hover{
+    background-color:rgb(90, 90, 90);
+    -webkit-box-shadow: 5px 3px 16.5px 9.5px #c7c7c7;
+    -moz-box-shadow: 5px 3px 12px 6px #c7c7c7;
+    box-shadow: 5px 3px 12px 6px #c7c7c7;
+}
+
+
+
+/* PRODUCTOS - GALERIA */
+
+.section-producto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "producto1 descripcion1"
+    "producto2 descripcion2"
+    "producto3 descripcion3"
+    "producto4 descripcion4";
+    gap: 35px;
+    padding-bottom: 70px;
+    max-width: 100%;
+}
+
+.t-producto{
+    padding-top: 70px;
+}
+
+.section-producto-img{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    max-width: 400px;
+}
+
+.section-producto-texto{
+    justify-self: center;
+    align-self: center;
+}
+
+.producto1 {
+    grid-area: producto1;  
+}
+
+.producto2 {
+    grid-area: producto2;  
+}
+
+.producto3 {
+    grid-area: producto3;  
+}
+
+.producto4 {
+    grid-area: producto4;  
+}
+
+.descripcion1{
+    grid-area: descripcion1;
+}
+
+.descripcion2{
+    grid-area: descripcion2;
+}
+
+.descripcion3{
+    grid-area: descripcion3;
+}
+
+.descripcion4{
+    grid-area: descripcion4;
+}
+
+.descripcion-producto p{
+    font-size: 22px;
+    padding: 0px 50px 0px 50px
+} 
+
+.seccion-video{
+    padding: 50px;
+}
+
+
+.card{
+    border-style: none;
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Sura:wght@400;700&display=swap");
+
+:root {
+  --src: url(https://images.unsplash.com/photo-1554620121-59e7f3f6e3a4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy);
+  --size: 40vmin;
+  --space: 8vmin;
+  --duration: 300ms;
+  --ease-out: cubic-bezier(0.25, 1, 0.5, 1);
+  --bounce-out: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*imagens com setas */
+
+.promo {
+  position: relative;
+  cursor: pointer;
+  width: var(--size);
+  height: var(--size);
+}
+
+.title {
+  --font-size: calc(var(--size) / 8);
+
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: var(--font-size);
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+  transform: translate(-10%, -50%);
+  transition: transform var(--duration) var(--ease-out);
+  pointer-events: none;
+}
+
+.title::after {
+  content: attr(data-cta);
+  display: inline-block;
+  margin-left: 1.5vmin;
+  font-size: calc(var(--font-size) / 3.25);
+  font-weight: 400;
+  letter-spacing: 0.125vmin;
+  opacity: 0;
+  transform: translateX(-25%);
+  transition: transform var(--duration) var(--ease-out),
+    opacity var(--duration) var(--ease-out);
+}
+
+.image-wrapper {
+  width: var(--size);
+  height: var(--size);
+  overflow: hidden;
+  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
+  transition: transform var(--duration) var(--ease-out),
+clip-path var(--duration) var(--ease-out);
+}
+
+.image-wrapper img {
+  position: relative;
+  width: 120%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateX(-10%);
+  transition: transform var(--duration) var(--ease-out);
+}
+
+.image-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlay-color);
+  mix-blend-mode: multiply;
+  opacity: 0;
+  transform: translateZ(0);
+  transition: opacity var(--duration) var(--ease-out);
+}
+
+.promo:hover img {
+  transform: translateX(0);
+}
+
+.promo:hover .image-wrapper {
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  transform: translateX(25%);
+  transition-timing-function: var(--bounce-out);
+}
+
+.promo:hover .title {
+  transform: translate(5%, -50%);
+  transition-timing-function: var(--bounce-out);
+}
+
+.promo:hover .title::after {
+  opacity: 1;
+  transform: translateX(0);
+  transition-timing-function: var(--bounce-out);
+}
+
+.promo:hover .image-wrapper::after {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PANTALLAS PEQUEÑAS */
+@media only screen and (max-width:991px) {
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid red;
+        padding: 1.5rem 1rem;
+    }
+    
+    .header-logo{
+        width: 200px;
+    }
+
+    .container-fluid{
+        padding: 0px 15px 0px 15px;
+    }
+    
+    nav{
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        font-style: italic;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+    }
+
+    .nav-item{
+        padding: 0px;
+    }
+    
+    .header-lista li{
+        list-style-type: none;
+        display: inline-block;
+    }
+
+    .navbar-nav{
+        align-items: center;
+    }
+    
+    .header-button{ 
+        font-size: 16px;
+        font-weight: 400;
+        border-radius: 10px;
+        letter-spacing: 2px;
+        width: 248px;
+        padding: 0.5rem 0.5rem;
+    }
+    
+    /* TEXTO */
+    
+    .seccion-texto{
+        padding: 1rem;
+    }
+    
+    
+    /* INDEX > SERVICIOS */
+    
+    .section-servicios{
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "img-carro"
+        "descripcion-carro"
+        "img-moto"
+        "descripcion-moto";
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .section-servicios-img{
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        width: 70%;
+    }
+    
+    .section-servicios-texto{
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .img-carro {
+        grid-area: img-carro;  
+    }
+    
+    .descripcion-carro{
+        grid-area: descripcion-carro;
+    }
+    
+    .descripcion-carro p{
+        font-size: 22px;
+        padding: 0px 50px 0px 50px
+    } 
+    
+    .descripcion-moto{
+        grid-area: descripcion-moto;
+    } 
+    
+    .descripcion-moto p{
+        font-size: 22px;
+        padding: 0px 50px 0px 50px
+    } 
+    
+    .img-moto{
+        grid-area: img-moto;
+    }
+    
+    /* SERVICIOS 
+       */
+    .seccion-descripcion-servicios{
+        padding: 0;
+    }  
+
+    .titulo-servicio{
+        padding: 50px 0px 10px 0px;
+    }
+    
+    .foto-servicio{
+        padding: 0;
+        margin-top: 40px;
+    }
+    
+    .seccion-presupuesto{
+        background-color: rgb(235, 235, 235);
+        text-align: center;
+        margin-top: 50px;
+        padding: 1rem;
+    }
+    
+    .container{
+        align-content: center;
+        justify-self: center;
+    }
+    
+    
+    /* FOOTER */
+    
+    footer{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(44, 44, 44);
+        height: 100%;
+    }
+    
+    .footer-logo{
+        width: 120px;
+        align-self: center;
+        justify-self: center;
+        padding: 20px 0px 20px 0px;
+    }
+
+    .footer-logo-img{
+        width: 100%;
+    }
+    
+    .footer-nav{
+        justify-self: center;
+        align-self: center;
+        text-decoration: none;
+        padding: 0px;
+    }
+    
+    .footer-menu li{
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 16px;
+        font-style: italic;
+        list-style: none;
+        text-align: center;
+        padding: 0px;
+    }
+    
+    /* unvisited link */
+    .footer-menu-lista:link {
+        color: white; 
+    }
+    
+      /* visited link */
+    .footer-menu-lista:visited {
+        color: white;
+    }
+    
+      /* mouse over link */
+    .footer-menu-lista:hover {
+        color: red;
+    }
+    
+      /* selected link */
+    .footer-menu-lista:active {
+        color: rgb(68, 68, 68);
+    }
+    
+    .footer-rsocial{
+        display: flex;
+        justify-content: space-around;
+        align-self: center;
+        padding: 0px;
+    }
+    
+    .redes_sociales{
+        width: 20px;
+        height: 20px;
+    }
+    
+  /*  input, textarea{
+        width: 100%;
+        padding-bottom: 14px;
+        box-sizing: border-box;
+    }
+*/
+
+    /* PRODUCTOS - GALERIA */
+
+.section-producto{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 70px;
+    max-width: 100%;
+}
+
+.t-producto{
+    padding-top: 70px;
+}
+
+.section-producto-img{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    max-width: 300px;
+}
+
+.section-producto-texto{
+    justify-self: center;
+    align-self: center;
+}
+
+.descripcion-producto p{
+    font-size: 18px;
+    padding: 0px 50px 0px 50px
+} 
+
+
+/* VIDEO PRODUCTOS */
+
+.seccion-video{
+    padding: 1rem;
+}
+
+.seccion-video iframe{
+    width: 100%;
+}
+
+}

@@ -1,0 +1,76 @@
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "menu logo rsocial";
+    height: 100%;
+    background-color: rgb(44, 44, 44);
+    padding: 20px;
+}
+
+.footer-logo{
+    grid-area: logo;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.footer-logo-img{
+    width: 140px;
+}
+
+.footer-nav{
+    grid-area: menu;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    text-decoration: none;
+}
+
+.footer-menu li{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 16px;
+    font-style: italic;
+    list-style: none;
+}
+
+.footer-menu{
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+/* unvisited link */
+.footer-menu-lista:link {
+    color: white; 
+    text-decoration: none;
+}
+
+  /* visited link */
+.footer-menu-lista:visited {
+    color: white;
+}
+
+  /* mouse over link */
+.footer-menu-lista:hover {
+    color: red;
+}
+
+  /* selected link */
+.footer-menu-lista:active {
+    color: rgb(68, 68, 68);
+}
+
+.footer-rsocial{
+    grid-area: rsocial;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    padding: 0px 70px 0px 70px
+}
+
+.redes_sociales{
+    width: 30px;
+    height: 30px;
+}

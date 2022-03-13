@@ -1,0 +1,29 @@
+
+.img-index{
+    object-fit: cover;
+    width: 100%;
+    overflow: hidden;
+    height: 600px;
+}
+
+.foto-servicio{
+    object-fit: cover;
+    -webkit-box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
+-moz-box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
+box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
+    border-radius: 50%;
+    height: 350px;
+    max-width: 350px;
+}
+
+.foto-equipo{
+    object-fit: cover;
+    align-self: center;
+    justify-self: center;
+    -webkit-box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
+-moz-box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
+box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
+    border-radius: 50%;
+    height: 200px;
+    max-width: 200px;
+}

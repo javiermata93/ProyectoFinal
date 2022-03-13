@@ -1,0 +1,50 @@
+
+
+.seccion-texto{
+    background-color: rgb(235, 235, 235);
+    text-align: center;
+    padding: 70px;
+}
+
+.seccion-transparente{
+    text-align: center;
+    padding: 70px 0px 70px 0px;
+}
+
+.seccion-transparente-peq{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.seccion-presupuesto{
+    background-color: rgb(235, 235, 235);
+    text-align: center;
+    margin-top: 50px;
+    padding: 70px;
+}
+
+.seccion-descripcion-servicios{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px 40px 0px;
+}
+
+.section-servicios-img{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    object-fit: cover;
+    -webkit-box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
+    -moz-box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
+    box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
+    width: 70%;
+    border-radius: 50%;
+    max-width: 350px;
+}
+
+.section-servicios-texto{
+    justify-self: center;
+    align-self: center;
+}
