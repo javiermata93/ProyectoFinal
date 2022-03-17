@@ -20,19 +20,17 @@
     }
 }
 
-
+/*
 .btn_estilo1{
     outline: 1px;
     border: none;
-    font-family: 'Oswald', sans-serif;
+    
     padding: 0.8rem 1.8rem;
     background-color:gray;
     color: white;
-    font-size: 20px;
-    font-weight: 500;
+    
     border-radius: 10px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    
     cursor:pointer;
     
 
@@ -43,7 +41,7 @@
     box-shadow: 5px 3px 12px 6px #c7c7c7;
 }
 }
-
+*/
 
 
 .btn_estilo2{
@@ -63,4 +61,60 @@
     &:hover{
         background-color:#C00;
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cta {
+    display: flex;
+      align-items: center;
+      text-align: center;
+      padding: 10px 45px;
+      text-decoration: none;
+      font-family: 'Oswald', sans-serif;
+      font-size: 26px;
+      font-weight: 500;
+      color: white;
+      letter-spacing: 2px;
+    text-transform: uppercase;
+      background: $color-secundario;
+      transition: 1s;
+      box-shadow: 6px 6px 0 black;
+      transform: skewX(-15deg);
+      border-radius: 8px;
+  }
+  
+  .cta:focus {
+     outline: none; 
+     
+  }
+  
+  .cta:hover {
+      transition: 0.5s;
+      box-shadow: 10px 10px 0 $color-principal;
+      color: $color-principal;
+  }
+  
+  .cta span:nth-child(2) {
+      transition: 0.5s;
+      margin-right: -25px;
+  }
+  
+  .cta:hover  span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: -10px;
 }

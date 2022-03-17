@@ -1,36 +1,38 @@
 
 
 .seccion-texto{
-    background-color: rgb(235, 235, 235);
+    background-color: $color-fundo-claro;
     text-align: center;
-    padding: 95px 70px 130px 70px;
+    padding: 30px 70px 30px 70px;
+    margin: 70px 0px 120px 0px;
     overflow: hidden;
 }
 
 .seccion-destaque{
-    background-color: rgb(41, 41, 41);
-    background-image: radial-gradient(#a6a6a6 0.5px, transparent 0.5px), radial-gradient(#a6a6a6 0.5px, transparent 0.5px);
-    background-size: 50px 50px;
-    background-position: 0 0, 30px 30px;
+    background: $color-fundo-oscuro;
+    background: -webkit-linear-gradient(0deg, #0c0e2d 0%, #04061b 50%, #020317 100%);
+    background: linear-gradient(0deg, #0c0e2d 0%, #04061b 50%, #020317 100%);
     text-align: center;
-    padding: 95px 0px 130px 0px;
+    padding: 95px 0px 160px 0px;
+    margin: 70px 0px 0px 0px;
     overflow: hidden;
 }
 
+/*
 .seccion-transparente{
     text-align: center;
     overflow: hidden;
-    padding: 70px 0px 70px 0px;
+    padding: 70px 0px 120px 0px;
 }
 
 .seccion-transparente-peq{
     text-align: center;
     overflow: hidden;
     padding-top: 30px;
-}
+}*/
 
 .seccion-presupuesto{
-    background-color: rgb(235, 235, 235);
+    background-color: $color-fundo-claro;
     text-align: center;
     margin-top: 50px;
     padding: 70px;

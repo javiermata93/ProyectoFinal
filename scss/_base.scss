@@ -1,0 +1,123 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    /*outline: solid 1px red;*/
+}
+
+
+
+body{
+    /* background-image: radial-gradient(#a6a6a6 0.5px, transparent 0.5px), radial-gradient(#a6a6a6 0.5px, transparent 0.5px);
+    background-size: 29px 29px;
+    background-position: 0 0, 14.5px 14.5px; */
+    background-color: $color-fundo-oscuro;
+}
+
+p, label{
+    text-align: center;
+    color: $color-texto;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    line-height: 2;
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding: 30px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $color-texto-claro;
+    letter-spacing: 2px;
+    font-size: clamp(1rem, 12vw, 4.5rem);
+    text-shadow: calc(1px + 0.12vw) calc(1px + 0.12vw) $color-texto;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $color-texto-claro;
+    letter-spacing: 3px;
+    font-size: clamp(1rem, 10vw, 3.5rem);
+    text-shadow: calc(0.9px + 0.1vw) calc(0.9px + 0.1vw) $color-texto;
+}
+
+h3{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $color-principal;
+    letter-spacing: 4px;
+    font-size: clamp(1rem, 8vw, 2.5rem);
+    text-shadow: calc(0.5px + 0.06vw) calc(0.5px + 0.06vw) $color-principal;
+}
+
+h4{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $color-texto;
+    letter-spacing: 4px;
+    font-size: clamp(0.8rem, 6vw, 1.5rem);
+}
+
+input, textarea, select, .input-group-text{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+
+.input-group{
+    padding-top: 20px;
+}
+
+
+.form-control:focus{
+    box-shadow: 2px 2px 2px 1px $color-principal;
+    border-color: lightgray;
+}
+
+.div-titulo-h1{
+    position: absolute; 
+    left: 50%;
+    transform:translate(-50%, -150px) skewX(-15deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $color-destaque;
+    border: 5px solid $color-principal;
+    -webkit-box-shadow: 1px 1px 22px 1.5px black;
+    -moz-box-shadow: 1px 1px 22px 1.5px black;
+    box-shadow: 1px 1px 22px 1.5px black;
+    border-radius: 10px;
+    height: 110px;
+    max-width: 1000px;
+    width: 80%;
+}
+
+.div-titulo-h2{
+    position: absolute; 
+    left: 50%;
+    transform:translate(-50%, -150px) skewX(-15deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $color-destaque;
+    border: 3px solid $color-principal;
+    -webkit-box-shadow: 1px 1px 22px 1.5px black;
+    -moz-box-shadow: 1px 1px 22px 1.5px black;
+    box-shadow: 1px 1px 22px 1.5px black;
+    border-radius: 10px;
+    height: 110px;
+    max-width: 600px;
+    width: 80%;
+}

@@ -4,7 +4,7 @@ footer{
     grid-template-areas:
     "menu logo rsocial";
     height: 400px;
-    background-color: rgb(26, 26, 26);
+    background-color: $color-footer;
     padding: 20px;
 }
 
