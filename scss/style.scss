@@ -33,6 +33,7 @@ p, label{
     color: rgb(75, 75, 75);
     font-size: 24px;
     font-family: 'Oswald', sans-serif;
+    line-height: 2;
     letter-spacing: 1px;
     font-weight: 400;
     padding: 30px;
@@ -195,12 +196,12 @@ input, textarea, select, .input-group-text{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    border: 2px solid yellow;
+    border: 2px solid #C00;
     border-radius: 20px;
     padding:40px 0px 40px 0px;
     margin: 15px;
     &:hover{
-        border: 2px solid #C00;
+        border: 2px solid white;
     }
 }
 
