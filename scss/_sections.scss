@@ -4,15 +4,28 @@
     background-color: rgb(235, 235, 235);
     text-align: center;
     padding: 70px;
+    overflow: hidden;
+}
+
+.seccion-destaque{
+    background-color: rgb(41, 41, 41);
+    background-image: radial-gradient(#a6a6a6 0.5px, transparent 0.5px), radial-gradient(#a6a6a6 0.5px, transparent 0.5px);
+    background-size: 50px 50px;
+    background-position: 0 0, 30px 30px;
+    text-align: center;
+    padding: 70px 0px 70px 0px;
+    overflow: hidden;
 }
 
 .seccion-transparente{
     text-align: center;
+    overflow: hidden;
     padding: 70px 0px 70px 0px;
 }
 
 .seccion-transparente-peq{
     text-align: center;
+    overflow: hidden;
     padding-top: 30px;
 }
 
@@ -28,6 +41,7 @@
     flex-direction:column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     padding: 40px 0px 40px 0px;
 }
 

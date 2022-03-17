@@ -1,0 +1,66 @@
+.header-button{ 
+    outline: none;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+    cursor:pointer;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    padding: 0.5rem 1.5rem;
+
+    &:hover{
+        background-color: rgb(173, 25, 25);
+        -webkit-box-shadow: 3px 3px 10px 3px #ddd;
+        -moz-box-shadow: 3px 3px 10px 3px #ddd;
+        box-shadow: 3px 3px 10px 3px #ddd;
+    }
+}
+
+
+.btn_estilo1{
+    outline: 1px;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    padding: 0.8rem 1.8rem;
+    background-color:gray;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor:pointer;
+    
+
+    &:hover{
+    background-color:rgb(90, 90, 90);
+    -webkit-box-shadow: 5px 3px 16.5px 9.5px #c7c7c7;
+    -moz-box-shadow: 5px 3px 12px 6px #c7c7c7;
+    box-shadow: 5px 3px 12px 6px #c7c7c7;
+}
+}
+
+
+
+.btn_estilo2{
+    outline: 1px;
+    border: 2px solid white;
+    font-family: 'Oswald', sans-serif;
+    padding: 0.5rem 1.5rem;
+    background-color:transparent;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor:pointer;
+
+    &:hover{
+        background-color:#C00;
+}
+}
