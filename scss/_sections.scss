@@ -13,9 +13,19 @@
     background: -webkit-linear-gradient(0deg, #0c0e2d 0%, #04061b 50%, #020317 100%);
     background: linear-gradient(0deg, #0c0e2d 0%, #04061b 50%, #020317 100%);
     text-align: center;
+    overflow: hidden;
+    -webkit-box-shadow: -0.5px -1px 19px -2.5px #3a3a3a;
+    -moz-box-shadow: -0.5px -1px 19px -2.5px #3a3a3a;
+    box-shadow: -0.5px -1px 19px -2.5px #3a3a3a;
+    width: 100%;
     padding: 95px 0px 160px 0px;
     margin: 70px 0px 0px 0px;
+}
+
+.seccion-marcas{
+    text-align: center;
     overflow: hidden;
+    padding-top: 40px;
 }
 
 /*

@@ -8,3 +8,44 @@
     width: 100%;
     object-fit: cover;
 }
+
+.img-index{
+    object-fit: cover;
+    width: 100%;
+    overflow: hidden;
+    height: 600px;
+}
+
+.foto-servicio{
+    object-fit: cover;
+    -webkit-box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
+    -moz-box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
+    box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
+    border-radius: 50%;
+    height: 350px;
+    max-width: 350px;
+}
+
+.foto-equipo{
+    object-fit: cover;
+    align-self: center;
+    justify-self: center;
+    -webkit-box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
+    -moz-box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
+    box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
+    border-radius: 50%;
+    height: 200px;
+    max-width: 200px;
+}
+
+.img-redonda{
+    object-fit: cover;
+    align-self: center;
+    justify-self: center;
+    -webkit-box-shadow: 2.5px 2.5px 3px 1px #f0f0f0;
+-moz-box-shadow: 2.5px 2.5px 3px 1px #f0f0f0;
+box-shadow: 2.5px 2.5px 3px 1px #f0f0f0;
+    border-radius: 50%;
+    height: 200px;
+    max-width: 200px;
+}

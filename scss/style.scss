@@ -4,7 +4,6 @@
 @import './variables.scss';
 @import './header';
 @import './footer';
-@import './images';
 @import './sections';
 @import './botones';
 @import'./sliders';
@@ -341,7 +340,7 @@ clip-path var(--duration) var(--ease-out);
     
     
     /* FOOTER */
-    
+    /*
     footer{
         display: flex;
         flex-direction: column;
@@ -377,7 +376,7 @@ clip-path var(--duration) var(--ease-out);
         text-align: center;
         padding: 0px;
     }
-    
+    */
     /* unvisited link */
     .footer-menu-lista:link {
         color: white; 
@@ -397,7 +396,7 @@ clip-path var(--duration) var(--ease-out);
     .footer-menu-lista:active {
         color: rgb(68, 68, 68);
     }
-    
+    /*
     .footer-rsocial{
         display: flex;
         justify-content: space-around;
@@ -410,7 +409,7 @@ clip-path var(--duration) var(--ease-out);
         height: 20px;
     }
     
-  /*  input, textarea{
+    input, textarea{
         width: 100%;
         padding-bottom: 14px;
         box-sizing: border-box;
