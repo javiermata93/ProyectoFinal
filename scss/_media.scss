@@ -42,10 +42,15 @@
     object-fit: cover;
     align-self: center;
     justify-self: center;
-    -webkit-box-shadow: 2.5px 2.5px 3px 1px #f0f0f0;
--moz-box-shadow: 2.5px 2.5px 3px 1px #f0f0f0;
-box-shadow: 2.5px 2.5px 3px 1px #f0f0f0;
+    -webkit-box-shadow: 2.5px 2.5px 3px 1px $color-secundario;
+-moz-box-shadow: 2.5px 2.5px 3px 1px $color-secundario;
+box-shadow: 2.5px 2.5px 3px 1px $color-secundario;
     border-radius: 50%;
     height: 200px;
     max-width: 200px;
+}
+
+
+.mapouter{
+margin: 40px 0px 60px 0px;
 }

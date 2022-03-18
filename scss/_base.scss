@@ -9,9 +9,6 @@
 
 
 body{
-    /* background-image: radial-gradient(#a6a6a6 0.5px, transparent 0.5px), radial-gradient(#a6a6a6 0.5px, transparent 0.5px);
-    background-size: 29px 29px;
-    background-position: 0 0, 14.5px 14.5px; */
     background-color: $color-fundo-oscuro;
 }
 
@@ -33,7 +30,7 @@ h1{
     font-weight: 700;
     color: $color-texto-claro;
     letter-spacing: 2px;
-    font-size: clamp(1rem, 12vw, 4.5rem);
+    font-size: clamp(1rem, 10vw, 5rem);
     text-shadow: calc(1px + 0.12vw) calc(1px + 0.12vw) $color-texto;
 }
 
@@ -56,7 +53,7 @@ h3{
     color: $color-principal;
     letter-spacing: 4px;
     font-size: clamp(1rem, 8vw, 2.5rem);
-    text-shadow: calc(0.5px + 0.06vw) calc(0.5px + 0.06vw) $color-principal;
+    text-shadow: calc(0.5px + 0.06vw) calc(0.5px + 0.06vw) $color-destaque;
 }
 
 h4{
