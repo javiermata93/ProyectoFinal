@@ -40,8 +40,27 @@
 
 
     p, label{
-      text-align: justify;
-      font-size: 20px;
-  }
+        text-align: justify;
+        font-size: 20px;
+    }
+
+    .seccion-texto{
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .div-destaque-col{
+        margin-left: 0;
+        margin-right: 0;
+        width: 90%;
+    }
+
+    .main-button, .main-button-destaque{
+    font-size: 20px;
+    }
+
+    .row{
+        justify-content: center
+    }
 
 }

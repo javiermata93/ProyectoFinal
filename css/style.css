@@ -208,7 +208,7 @@ footer {
 .div-destaque-row {
   min-height: 450px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   -webkit-box-shadow: -0.5px -1px 19px -2.5px #EA3546;
@@ -685,4 +685,15 @@ input, textarea, select, .input-group-text {
     align-items: center; }
   p, label {
     text-align: justify;
-    font-size: 20px; } }
+    font-size: 20px; }
+  .seccion-texto {
+    padding-left: 4%;
+    padding-right: 4%; }
+  .div-destaque-col {
+    margin-left: 0;
+    margin-right: 0;
+    width: 90%; }
+  .main-button, .main-button-destaque {
+    font-size: 20px; }
+  .row {
+    justify-content: center; } }
