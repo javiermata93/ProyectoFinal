@@ -10,211 +10,12 @@
 @import'./media';
 @import'./base';
 
+
+/*VER QUE ES Y SI LO USO...*/
 .card{
     border-style: none;
     background-color: transparent;
 }
-
-.index-svg{
-    max-width: 200px;
-    filter:contrast(0%)
-    }
-
-.div-destaque-col{
-    min-height: 450px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    -webkit-box-shadow: -0.5px -1px 19px -2.5px $color-destaque;
-    -moz-box-shadow: -0.5px -1px 19px -2.5px $color-destaque;
-    box-shadow: -0.5px -1px 19px -2.5px $color-destaque;
-    border: 4px solid $color-destaque;
-    border-radius: 20px;
-    padding:40px 0px 40px 0px;
-    margin: 60px 15px 60px 15px;
-    &:hover{
-    border: 4px solid $color-principal;
-    -webkit-box-shadow: -0.5px -1px 19px -2.5px $color-principal;
-    -moz-box-shadow: -0.5px -1px 19px -2.5px $color-principal;
-    box-shadow: -0.5px -1px 19px -2.5px $color-principal;
-    }
-}
-
-.div-destaque-row{
-    min-height: 450px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    -webkit-box-shadow: -0.5px -1px 19px -2.5px $color-destaque;
-    -moz-box-shadow: -0.5px -1px 19px -2.5px $color-destaque;
-    box-shadow: -0.5px -1px 19px -2.5px $color-destaque;
-    border: 4px solid $color-destaque;
-    border-radius: 20px;
-    padding:0;
-    margin: 60px 15px 60px 15px;
-    &:hover{
-    border: 4px solid $color-principal;
-    -webkit-box-shadow: -0.5px -1px 19px -2.5px $color-principal;
-    -moz-box-shadow: -0.5px -1px 19px -2.5px $color-principal;
-    box-shadow: -0.5px -1px 19px -2.5px $color-principal;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*imagens com setas */
-
-@import url("https://fonts.googleapis.com/css2?family=Sura:wght@400;700&display=swap");
-
-:root {
-  --src: url(https://images.unsplash.com/photo-1554620121-59e7f3f6e3a4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy);
-  --size: 40vmin;
-  --space: 8vmin;
-  --duration: 300ms;
-  --ease-out: cubic-bezier(0.25, 1, 0.5, 1);
-  --bounce-out: cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-* {
-  box-sizing: border-box;
-}
-
-
-
-.promo {
-  position: relative;
-  cursor: pointer;
-  width: var(--size);
-  height: var(--size);
-}
-
-.title {
-  --font-size: calc(var(--size) / 8);
-
-  display: flex;
-  align-items: center;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  font-size: var(--font-size);
-  font-weight: 700;
-  line-height: 1.2;
-  white-space: nowrap;
-  transform: translate(-10%, -50%);
-  transition: transform var(--duration) var(--ease-out);
-  pointer-events: none;
-}
-
-.title::after {
-  content: attr(data-cta);
-  display: inline-block;
-  margin-left: 1.5vmin;
-  font-size: calc(var(--font-size) / 3.25);
-  font-weight: 400;
-  letter-spacing: 0.125vmin;
-  opacity: 0;
-  transform: translateX(-25%);
-  transition: transform var(--duration) var(--ease-out),
-    opacity var(--duration) var(--ease-out);
-}
-
-.image-wrapper {
-  width: var(--size);
-  height: var(--size);
-  overflow: hidden;
-  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
-  transition: transform var(--duration) var(--ease-out),
-clip-path var(--duration) var(--ease-out);
-}
-
-.image-wrapper img {
-  position: relative;
-  width: 120%;
-  height: 100%;
-  object-fit: cover;
-  transform: translateX(-10%);
-  transition: transform var(--duration) var(--ease-out);
-}
-
-.image-wrapper::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: $color-destaque;
-  mix-blend-mode: multiply;
-  opacity: 0;
-  transform: translateZ(0);
-  transition: opacity var(--duration) var(--ease-out);
-}
-
-.promo:hover img {
-  transform: translateX(0);
-}
-
-.promo:hover .image-wrapper {
-  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-  transform: translateX(25%);
-  transition-timing-function: var(--bounce-out);
-}
-
-.promo:hover .title {
-  transform: translate(5%, -50%);
-  transition-timing-function: var(--bounce-out);
-}
-
-.promo:hover .title::after {
-  opacity: 1;
-  transform: translateX(0);
-  transition-timing-function: var(--bounce-out);
-}
-
-.promo:hover .image-wrapper::after {
-  opacity: 1;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -227,97 +28,20 @@ clip-path var(--duration) var(--ease-out);
 /* PANTALLAS PEQUEÑAS */
 @media only screen and (max-width:991px) {
 
-    .header{
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        justify-content: center;
-        align-items: center;
-        border-bottom: 2px solid $color-destaque;
-        padding: 1.5rem 1rem;
-    }
-    
-    .header-logo{
-        width: 200px;
-    }
 
+/*VER QUE ES Y SI LO USO...*/
     .container-fluid{
         padding: 0px 15px 0px 15px;
     }
     
-    nav{
-        font-family: 'Oswald', sans-serif;
-        text-transform: uppercase;
-        font-style: italic;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: 400;
-    }
-
-    .nav-item{
-        padding: 0px;
-    }
-    
-    .header-lista li{
-        list-style-type: none;
-        display: inline-block;
-    }
-
     .navbar-nav{
         align-items: center;
     }
-    
-    .header-button{ 
-        font-size: 16px;
-        font-weight: 400;
-        border-radius: 10px;
-        letter-spacing: 2px;
-        width: 248px;
-        padding: 0.5rem 0.5rem;
-    }
-    
-    /* TEXTO */
-    
-    .seccion-texto{
-        padding: 1rem;
-    }
-    
-    
-    
-    /* SERVICIOS 
-       */
-    .seccion-descripcion-servicios{
-        padding: 0;
-    }  
-
-    .titulo-servicio{
-        padding: 50px 0px 10px 0px;
-    }
-    
-    .foto-servicio{
-        padding: 0;
-        margin-top: 40px;
-    }
-    
-  
-    .container{
-        align-content: center;
-        justify-self: center;
-    }
-
-    
-    
 
 
-/* VIDEO PRODUCTOS */
-
-.seccion-video{
-    padding: 1rem;
-}
-
-.seccion-video iframe{
-    width: 100%;
-}
+    p, label{
+      text-align: justify;
+      font-size: 20px;
+  }
 
 }

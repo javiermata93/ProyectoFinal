@@ -27,13 +27,31 @@
     overflow: hidden;
 }
 
-/*CENTRAR IMG SERVICIOS Y PRODUCTOS*/
-.centrar-img{
+@mixin div-destaques($fd, $pad){
+    min-height: 450px;
     display: flex;
-    flex-direction:column;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    justify-content: space-between;
+    -webkit-box-shadow: -0.5px -1px 19px -2.5px $color-destaque;
+    -moz-box-shadow: -0.5px -1px 19px -2.5px $color-destaque;
+    box-shadow: -0.5px -1px 19px -2.5px $color-destaque;
+    border: 4px solid $color-destaque;
+    border-radius: 20px;
+    padding:40px 0px 40px 0px;
+    margin: 60px 15px 60px 15px;
+    &:hover{
+    border: 4px solid $color-principal;
+    -webkit-box-shadow: -0.5px -1px 19px -2.5px $color-principal;
+    -moz-box-shadow: -0.5px -1px 19px -2.5px $color-principal;
+    box-shadow: -0.5px -1px 19px -2.5px $color-principal;
+}
 }
 
+.div-destaque-col{
+    @include div-destaques(column, 40px 0px 40px 0px);
+}
 
+.div-destaque-row{
+    @include div-destaques(row, 0);
+}
