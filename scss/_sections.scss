@@ -1,26 +1,22 @@
-
+@mixin secciones($bg-color, $padding, $margin){
+    background-color: $bg-color;
+    text-align: center;
+    overflow: hidden;
+    padding: $padding;
+    margin: $margin;
+}
 
 .seccion-texto{
-    background-color: $color-fundo-claro;
-    text-align: center;
-    padding: 30px 70px 30px 70px;
-    margin: 70px 0px 120px 0px;
-    overflow: hidden;
+    @include secciones($color-fundo-claro, 30px 70px 30px 70px, 70px 0px 120px 0px);
 }
 
 .seccion-destaque{
-    background: $color-fundo-oscuro;
+    @include secciones($color-fundo-oscuro, 95px 0px 160px 0px, 70px 0px 0px 0px);
     background: -webkit-linear-gradient(0deg, #0c0e2d 0%, #04061b 50%, #020317 100%);
     background: linear-gradient(0deg, #0c0e2d 0%, #04061b 50%, #020317 100%);
-    text-align: center;
-    overflow: hidden;
     -webkit-box-shadow: -0.5px -1px 19px -2.5px #3a3a3a;
     -moz-box-shadow: -0.5px -1px 19px -2.5px #3a3a3a;
     box-shadow: -0.5px -1px 19px -2.5px #3a3a3a;
-    width: 100%;
-    padding: 95px 0px 160px 0px;
-    margin: 70px 0px 0px 0px;
-
     & p{
         color: $color-texto-claro;
     }
@@ -31,49 +27,13 @@
     overflow: hidden;
 }
 
-/*
-.seccion-transparente{
-    text-align: center;
-    overflow: hidden;
-    padding: 70px 0px 120px 0px;
-}
-
-.seccion-transparente-peq{
-    text-align: center;
-    overflow: hidden;
-    padding-top: 30px;
-}*/
-
-.seccion-presupuesto{
-    background-color: $color-fundo-claro;
-    text-align: center;
-    margin-top: 50px;
-    padding: 70px;
-}
-
-.seccion-descripcion-servicios{
+/*CENTRAR IMG SERVICIOS Y PRODUCTOS*/
+.centrar-img{
     display: flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    padding: 40px 0px 40px 0px;
 }
 
-.section-servicios-img{
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    object-fit: cover;
-    -webkit-box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
-    -moz-box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
-    box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
-    width: 70%;
-    border-radius: 50%;
-    max-width: 350px;
-}
 
-.section-servicios-texto{
-    justify-self: center;
-    align-self: center;
-}

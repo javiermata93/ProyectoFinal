@@ -13,7 +13,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 20px; }
 
 #navbarNav {
@@ -164,22 +164,21 @@ footer {
 .seccion-texto {
   background-color: white;
   text-align: center;
+  overflow: hidden;
   padding: 30px 70px 30px 70px;
-  margin: 70px 0px 120px 0px;
-  overflow: hidden; }
+  margin: 70px 0px 120px 0px; }
 
 .seccion-destaque {
-  background: white;
-  background: -webkit-linear-gradient(0deg, #0c0e2d 0%, #04061b 50%, #020317 100%);
-  background: linear-gradient(0deg, #0c0e2d 0%, #04061b 50%, #020317 100%);
+  background-color: white;
   text-align: center;
   overflow: hidden;
+  padding: 95px 0px 160px 0px;
+  margin: 70px 0px 0px 0px;
+  background: -webkit-linear-gradient(0deg, #0c0e2d 0%, #04061b 50%, #020317 100%);
+  background: linear-gradient(0deg, #0c0e2d 0%, #04061b 50%, #020317 100%);
   -webkit-box-shadow: -0.5px -1px 19px -2.5px #3a3a3a;
   -moz-box-shadow: -0.5px -1px 19px -2.5px #3a3a3a;
-  box-shadow: -0.5px -1px 19px -2.5px #3a3a3a;
-  width: 100%;
-  padding: 95px 0px 160px 0px;
-  margin: 70px 0px 0px 0px; }
+  box-shadow: -0.5px -1px 19px -2.5px #3a3a3a; }
   .seccion-destaque p {
     color: white; }
 
@@ -187,48 +186,15 @@ footer {
   text-align: center;
   overflow: hidden; }
 
-/*
-.seccion-transparente{
-    text-align: center;
-    overflow: hidden;
-    padding: 70px 0px 120px 0px;
-}
-
-.seccion-transparente-peq{
-    text-align: center;
-    overflow: hidden;
-    padding-top: 30px;
-}*/
-.seccion-presupuesto {
-  background-color: white;
-  text-align: center;
-  margin-top: 50px;
-  padding: 70px; }
-
-.seccion-descripcion-servicios {
+/*CENTRAR IMG SERVICIOS Y PRODUCTOS*/
+.centrar-img {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  padding: 40px 0px 40px 0px; }
+  overflow: hidden; }
 
-.section-servicios-img {
-  display: flex;
-  justify-self: center;
-  align-self: center;
-  object-fit: cover;
-  -webkit-box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
-  -moz-box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
-  box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
-  width: 70%;
-  border-radius: 50%;
-  max-width: 350px; }
-
-.section-servicios-texto {
-  justify-self: center;
-  align-self: center; }
-
+/*BOTON HEADER Y FORMULARIO CONTACTO*/
 .header-button {
   outline: none;
   border: none;
@@ -243,27 +209,31 @@ footer {
   letter-spacing: 2px;
   padding: 0.5rem 1.5rem; }
   .header-button:hover {
-    background-color: #ad1919;
+    filter: grayscale(35%);
     -webkit-box-shadow: 3px 3px 10px 3px #ddd;
     -moz-box-shadow: 3px 3px 10px 3px #ddd;
     box-shadow: 3px 3px 10px 3px #ddd; }
 
 .form-button {
-  outline: 1px;
+  outline: none;
   border: none;
-  text-transform: uppercase;
-  padding: 0.8rem 1.8rem;
-  background-color: gray;
-  color: white;
   font-family: 'Oswald', sans-serif;
+  background-color: #6225E6;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
   border-radius: 10px;
-  cursor: pointer; }
+  letter-spacing: 2px;
+  padding: 0.5rem 1.5rem; }
   .form-button:hover {
-    background-color: #5a5a5a;
-    -webkit-box-shadow: 5px 3px 16.5px 9.5px #c7c7c7;
-    -moz-box-shadow: 5px 3px 12px 6px #c7c7c7;
-    box-shadow: 5px 3px 12px 6px #c7c7c7; }
+    filter: grayscale(35%);
+    -webkit-box-shadow: 3px 3px 10px 3px #ddd;
+    -moz-box-shadow: 3px 3px 10px 3px #ddd;
+    box-shadow: 3px 3px 10px 3px #ddd; }
 
+/*BOTON DIV DESTAQUES*/
 .destaque-button {
   outline: 1px;
   border: 2px solid white;
@@ -281,6 +251,7 @@ footer {
     background-color: #EA3546;
     border: 2px solid #FBC638; }
 
+/*BOTON PRINCIPAL*/
 .wrapper {
   display: flex;
   justify-content: center; }
@@ -312,6 +283,36 @@ footer {
     transition: 0.5s;
     margin-right: -25px; }
   .main-button:hover span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: -10px; }
+
+.main-button-destaque {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px 45px;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: #6225E6;
+  transition: 1s;
+  box-shadow: 6px 6px 0 white;
+  transform: skewX(-15deg);
+  border-radius: 8px; }
+  .main-button-destaque:focus {
+    outline: none; }
+  .main-button-destaque:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #FBC638;
+    color: #FBC638; }
+  .main-button-destaque span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: -25px; }
+  .main-button-destaque:hover span:nth-child(2) {
     transition: 0.5s;
     margin-right: -10px; }
 
@@ -419,26 +420,6 @@ footer {
   overflow: hidden;
   height: 600px; }
 
-.foto-servicio {
-  object-fit: cover;
-  -webkit-box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
-  -moz-box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
-  box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
-  border-radius: 50%;
-  height: 350px;
-  max-width: 350px; }
-
-.foto-equipo {
-  object-fit: cover;
-  align-self: center;
-  justify-self: center;
-  -webkit-box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
-  -moz-box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
-  box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
-  border-radius: 50%;
-  height: 200px;
-  max-width: 200px; }
-
 .img-redonda {
   object-fit: cover;
   align-self: center;
@@ -450,6 +431,7 @@ footer {
   height: 200px;
   max-width: 200px; }
 
+/*MAPA CONTACTOS*/
 .mapouter {
   margin: 40px 0px 60px 0px; }
 
@@ -510,7 +492,8 @@ h4 {
   font-weight: 500;
   color: black;
   letter-spacing: 4px;
-  font-size: clamp(0.8rem, 6vw, 1.5rem); }
+  font-size: clamp(0.8rem, 6vw, 1.5rem);
+  text-shadow: none; }
 
 input, textarea, select, .input-group-text {
   font-family: 'Oswald', sans-serif;
@@ -521,7 +504,7 @@ input, textarea, select, .input-group-text {
   padding-top: 20px; }
 
 .form-control:focus {
-  box-shadow: 2px 2px 2px 1px #FBC638;
+  box-shadow: 1px 1px 2px 1px #6225E6;
   border-color: lightgray; }
 
 .div-titulo-h1 {
@@ -572,12 +555,18 @@ input, textarea, select, .input-group-text {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  -webkit-box-shadow: -0.5px -1px 19px -2.5px #EA3546;
+  -moz-box-shadow: -0.5px -1px 19px -2.5px #EA3546;
+  box-shadow: -0.5px -1px 19px -2.5px #EA3546;
   border: 4px solid #EA3546;
   border-radius: 20px;
   padding: 40px 0px 40px 0px;
   margin: 60px 15px 60px 15px; }
   .div-destaque-col:hover {
-    border: 4px solid #FBC638; }
+    border: 4px solid #FBC638;
+    -webkit-box-shadow: -0.5px -1px 19px -2.5px #FBC638;
+    -moz-box-shadow: -0.5px -1px 19px -2.5px #FBC638;
+    box-shadow: -0.5px -1px 19px -2.5px #FBC638; }
 
 .div-destaque-row {
   min-height: 450px;
@@ -585,12 +574,18 @@ input, textarea, select, .input-group-text {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  -webkit-box-shadow: -0.5px -1px 19px -2.5px #EA3546;
+  -moz-box-shadow: -0.5px -1px 19px -2.5px #EA3546;
+  box-shadow: -0.5px -1px 19px -2.5px #EA3546;
   border: 4px solid #EA3546;
   border-radius: 20px;
   padding: 0;
   margin: 60px 15px 60px 15px; }
   .div-destaque-row:hover {
-    border: 4px solid #FBC638; }
+    border: 4px solid #FBC638;
+    -webkit-box-shadow: -0.5px -1px 19px -2.5px #FBC638;
+    -moz-box-shadow: -0.5px -1px 19px -2.5px #FBC638;
+    box-shadow: -0.5px -1px 19px -2.5px #FBC638; }
 
 /*imagens com setas */
 :root {
@@ -723,36 +718,6 @@ input, textarea, select, .input-group-text {
   /* TEXTO */
   .seccion-texto {
     padding: 1rem; }
-  /* INDEX > SERVICIOS */
-  .section-servicios {
-    display: grid;
-    grid-template-columns: 90%;
-    grid-template-rows: auto;
-    grid-template-areas: "img-carro" "descripcion-carro" "img-moto" "descripcion-moto";
-    align-content: center;
-    justify-content: center; }
-  .section-servicios-img {
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    width: 70%; }
-  .section-servicios-texto {
-    justify-self: center;
-    align-self: center; }
-  .img-carro {
-    grid-area: img-carro; }
-  .descripcion-carro {
-    grid-area: descripcion-carro; }
-  .descripcion-carro p {
-    font-size: 22px;
-    padding: 0px 50px 0px 50px; }
-  .descripcion-moto {
-    grid-area: descripcion-moto; }
-  .descripcion-moto p {
-    font-size: 22px;
-    padding: 0px 50px 0px 50px; }
-  .img-moto {
-    grid-area: img-moto; }
   /* SERVICIOS 
        */
   .seccion-descripcion-servicios {
@@ -762,102 +727,9 @@ input, textarea, select, .input-group-text {
   .foto-servicio {
     padding: 0;
     margin-top: 40px; }
-  .seccion-presupuesto {
-    background-color: #ebebeb;
-    text-align: center;
-    margin-top: 50px;
-    padding: 1rem; }
   .container {
     align-content: center;
     justify-self: center; }
-  /* FOOTER */
-  /*
-    footer{
-        display: flex;
-        flex-direction: column;
-        background-color: rgb(44, 44, 44);
-        height: 100%;
-    }
-    
-    .footer-logo{
-        width: 120px;
-        align-self: center;
-        justify-self: center;
-        padding: 20px 0px 20px 0px;
-    }
-
-    .footer-logo-img{
-        width: 100%;
-    }
-    
-    .footer-nav{
-        justify-self: center;
-        align-self: center;
-        text-decoration: none;
-        padding: 0px;
-    }
-    
-    .footer-menu li{
-        font-family: 'Oswald', sans-serif;
-        text-transform: uppercase;
-        font-weight: 300;
-        font-size: 16px;
-        font-style: italic;
-        list-style: none;
-        text-align: center;
-        padding: 0px;
-    }
-    */
-  /* unvisited link */
-  .footer-menu-lista:link {
-    color: white; }
-  /* visited link */
-  .footer-menu-lista:visited {
-    color: white; }
-  /* mouse over link */
-  .footer-menu-lista:hover {
-    color: red; }
-  /* selected link */
-  .footer-menu-lista:active {
-    color: #444444; }
-  /*
-    .footer-rsocial{
-        display: flex;
-        justify-content: space-around;
-        align-self: center;
-        padding: 0px;
-    }
-    
-    .redes_sociales{
-        width: 20px;
-        height: 20px;
-    }
-    
-    input, textarea{
-        width: 100%;
-        padding-bottom: 14px;
-        box-sizing: border-box;
-    }
-*/
-  /* PRODUCTOS - GALERIA */
-  .section-producto {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 70px;
-    max-width: 100%; }
-  .t-producto {
-    padding-top: 70px; }
-  .section-producto-img {
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    max-width: 300px; }
-  .section-producto-texto {
-    justify-self: center;
-    align-self: center; }
-  .descripcion-producto p {
-    font-size: 18px;
-    padding: 0px 50px 0px 50px; }
   /* VIDEO PRODUCTOS */
   .seccion-video {
     padding: 1rem; }

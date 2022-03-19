@@ -16,41 +16,19 @@
     height: 600px;
 }
 
-.foto-servicio{
-    object-fit: cover;
-    -webkit-box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
-    -moz-box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
-    box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
-    border-radius: 50%;
-    height: 350px;
-    max-width: 350px;
-}
-
-.foto-equipo{
-    object-fit: cover;
-    align-self: center;
-    justify-self: center;
-    -webkit-box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
-    -moz-box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
-    box-shadow: 10.5px 7.5px 17px 7px #cbcbcb;
-    border-radius: 50%;
-    height: 200px;
-    max-width: 200px;
-}
-
 .img-redonda{
     object-fit: cover;
     align-self: center;
     justify-self: center;
     -webkit-box-shadow: 2.5px 2.5px 3px 1px $color-secundario;
--moz-box-shadow: 2.5px 2.5px 3px 1px $color-secundario;
-box-shadow: 2.5px 2.5px 3px 1px $color-secundario;
+    -moz-box-shadow: 2.5px 2.5px 3px 1px $color-secundario;
+    box-shadow: 2.5px 2.5px 3px 1px $color-secundario;
     border-radius: 50%;
     height: 200px;
     max-width: 200px;
 }
 
-
+/*MAPA CONTACTOS*/
 .mapouter{
 margin: 40px 0px 60px 0px;
 }

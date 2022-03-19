@@ -26,12 +26,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    -webkit-box-shadow: -0.5px -1px 19px -2.5px $color-destaque;
+    -moz-box-shadow: -0.5px -1px 19px -2.5px $color-destaque;
+    box-shadow: -0.5px -1px 19px -2.5px $color-destaque;
     border: 4px solid $color-destaque;
     border-radius: 20px;
     padding:40px 0px 40px 0px;
     margin: 60px 15px 60px 15px;
     &:hover{
     border: 4px solid $color-principal;
+    -webkit-box-shadow: -0.5px -1px 19px -2.5px $color-principal;
+    -moz-box-shadow: -0.5px -1px 19px -2.5px $color-principal;
+    box-shadow: -0.5px -1px 19px -2.5px $color-principal;
     }
 }
 
@@ -41,12 +47,18 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    -webkit-box-shadow: -0.5px -1px 19px -2.5px $color-destaque;
+    -moz-box-shadow: -0.5px -1px 19px -2.5px $color-destaque;
+    box-shadow: -0.5px -1px 19px -2.5px $color-destaque;
     border: 4px solid $color-destaque;
     border-radius: 20px;
     padding:0;
     margin: 60px 15px 60px 15px;
     &:hover{
     border: 4px solid $color-principal;
+    -webkit-box-shadow: -0.5px -1px 19px -2.5px $color-principal;
+    -moz-box-shadow: -0.5px -1px 19px -2.5px $color-principal;
+    box-shadow: -0.5px -1px 19px -2.5px $color-principal;
     }
 }
 
@@ -272,58 +284,6 @@ clip-path var(--duration) var(--ease-out);
     }
     
     
-    /* INDEX > SERVICIOS */
-    
-    .section-servicios{
-        display: grid;
-        grid-template-columns: 90%;
-        grid-template-rows: auto;
-        grid-template-areas:
-        "img-carro"
-        "descripcion-carro"
-        "img-moto"
-        "descripcion-moto";
-        align-content: center;
-        justify-content: center;
-    }
-    
-    .section-servicios-img{
-        display: flex;
-        justify-self: center;
-        align-self: center;
-        width: 70%;
-    }
-    
-    .section-servicios-texto{
-        justify-self: center;
-        align-self: center;
-    }
-    
-    .img-carro {
-        grid-area: img-carro;  
-    }
-    
-    .descripcion-carro{
-        grid-area: descripcion-carro;
-    }
-    
-    .descripcion-carro p{
-        font-size: 22px;
-        padding: 0px 50px 0px 50px
-    } 
-    
-    .descripcion-moto{
-        grid-area: descripcion-moto;
-    } 
-    
-    .descripcion-moto p{
-        font-size: 22px;
-        padding: 0px 50px 0px 50px
-    } 
-    
-    .img-moto{
-        grid-area: img-moto;
-    }
     
     /* SERVICIOS 
        */
@@ -340,13 +300,7 @@ clip-path var(--duration) var(--ease-out);
         margin-top: 40px;
     }
     
-    .seccion-presupuesto{
-        background-color: rgb(235, 235, 235);
-        text-align: center;
-        margin-top: 50px;
-        padding: 1rem;
-    }
-    
+  
     .container{
         align-content: center;
         justify-self: center;
@@ -354,112 +308,6 @@ clip-path var(--duration) var(--ease-out);
 
     
     
-    /* FOOTER */
-    /*
-    footer{
-        display: flex;
-        flex-direction: column;
-        background-color: rgb(44, 44, 44);
-        height: 100%;
-    }
-    
-    .footer-logo{
-        width: 120px;
-        align-self: center;
-        justify-self: center;
-        padding: 20px 0px 20px 0px;
-    }
-
-    .footer-logo-img{
-        width: 100%;
-    }
-    
-    .footer-nav{
-        justify-self: center;
-        align-self: center;
-        text-decoration: none;
-        padding: 0px;
-    }
-    
-    .footer-menu li{
-        font-family: 'Oswald', sans-serif;
-        text-transform: uppercase;
-        font-weight: 300;
-        font-size: 16px;
-        font-style: italic;
-        list-style: none;
-        text-align: center;
-        padding: 0px;
-    }
-    */
-    /* unvisited link */
-    .footer-menu-lista:link {
-        color: white; 
-    }
-    
-      /* visited link */
-    .footer-menu-lista:visited {
-        color: white;
-    }
-    
-      /* mouse over link */
-    .footer-menu-lista:hover {
-        color: red;
-    }
-    
-      /* selected link */
-    .footer-menu-lista:active {
-        color: rgb(68, 68, 68);
-    }
-    /*
-    .footer-rsocial{
-        display: flex;
-        justify-content: space-around;
-        align-self: center;
-        padding: 0px;
-    }
-    
-    .redes_sociales{
-        width: 20px;
-        height: 20px;
-    }
-    
-    input, textarea{
-        width: 100%;
-        padding-bottom: 14px;
-        box-sizing: border-box;
-    }
-*/
-
-    /* PRODUCTOS - GALERIA */
-
-.section-producto{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 70px;
-    max-width: 100%;
-}
-
-.t-producto{
-    padding-top: 70px;
-}
-
-.section-producto-img{
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    max-width: 300px;
-}
-
-.section-producto-texto{
-    justify-self: center;
-    align-self: center;
-}
-
-.descripcion-producto p{
-    font-size: 18px;
-    padding: 0px 50px 0px 50px
-} 
 
 
 /* VIDEO PRODUCTOS */

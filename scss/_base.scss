@@ -6,8 +6,6 @@
     /*outline: solid 1px red;*/
 }
 
-
-
 body{
     background-color: $color-fundo-oscuro;
 }
@@ -23,47 +21,31 @@ p, label{
     padding: 30px;
 }
 
-h1{
+@mixin titulos($fw, $color, $ls, $size, $ts){
     text-align: center;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    font-weight: 700;
-    color: $color-texto-claro;
-    letter-spacing: 2px;
-    font-size: clamp(1rem, 10vw, 5rem);
-    text-shadow: calc(1px + 0.12vw) calc(1px + 0.12vw) $color-texto;
+    font-weight: $fw;
+    color: $color;
+    letter-spacing: $ls;
+    font-size: $size;
+    text-shadow: $ts;
+}
+
+h1{
+    @include titulos(700, $color-texto-claro, 2px, clamp(1rem, 10vw, 5rem), calc(1px + 0.12vw) calc(1px + 0.12vw) $color-texto);
 }
 
 h2{
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: $color-texto-claro;
-    letter-spacing: 3px;
-    font-size: clamp(1rem, 10vw, 3.5rem);
-    text-shadow: calc(0.9px + 0.1vw) calc(0.9px + 0.1vw) $color-texto;
+    @include titulos(700, $color-texto-claro, 3px, clamp(1rem, 10vw, 3.5rem), calc(0.9px + 0.1vw) calc(0.9px + 0.1vw) $color-texto);
 }
 
 h3{
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: $color-principal;
-    letter-spacing: 4px;
-    font-size: clamp(1rem, 8vw, 2.5rem);
-    text-shadow: calc(0.5px + 0.06vw) calc(0.5px + 0.06vw) $color-destaque;
+    @include titulos(500, $color-principal, 4px, clamp(1rem, 8vw, 2.5rem), calc(0.5px + 0.06vw) calc(0.5px + 0.06vw) $color-destaque);
 }
 
 h4{
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: $color-texto;
-    letter-spacing: 4px;
-    font-size: clamp(0.8rem, 6vw, 1.5rem);
+    @include titulos(500, $color-texto, 4px, clamp(0.8rem, 6vw, 1.5rem), none);
 }
 
 input, textarea, select, .input-group-text{
@@ -79,11 +61,12 @@ input, textarea, select, .input-group-text{
 
 
 .form-control:focus{
-    box-shadow: 2px 2px 2px 1px $color-principal;
+    box-shadow: 1px 1px 2px 1px $color-secundario;
     border-color: lightgray;
 }
 
-.div-titulo-h1{
+
+@mixin div-titulos($border, $width){
     position: absolute; 
     left: 50%;
     transform:translate(-50%, -150px) skewX(-15deg);
@@ -91,30 +74,21 @@ input, textarea, select, .input-group-text{
     justify-content: center;
     align-items: center;
     background: $color-destaque;
-    border: 5px solid $color-principal;
+    border: $border;
     -webkit-box-shadow: 1px 1px 22px 1.5px black;
     -moz-box-shadow: 1px 1px 22px 1.5px black;
     box-shadow: 1px 1px 22px 1.5px black;
     border-radius: 10px;
     height: 110px;
-    max-width: 1000px;
+    max-width: $width;
     width: 80%;
 }
 
+
+.div-titulo-h1{
+    @include div-titulos(5px solid $color-principal, 1000px)
+}
+
 .div-titulo-h2{
-    position: absolute; 
-    left: 50%;
-    transform:translate(-50%, -150px) skewX(-15deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: $color-destaque;
-    border: 3px solid $color-principal;
-    -webkit-box-shadow: 1px 1px 22px 1.5px black;
-    -moz-box-shadow: 1px 1px 22px 1.5px black;
-    box-shadow: 1px 1px 22px 1.5px black;
-    border-radius: 10px;
-    height: 110px;
-    max-width: 600px;
-    width: 80%;
+    @include div-titulos(3px solid $color-principal, 600px)
 }
