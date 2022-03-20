@@ -21,6 +21,13 @@ p, label{
     padding: 30px;
 }
 
+.p-form{
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
 @mixin titulos($fw, $color, $ls, $size, $ts){
     text-align: center;
     font-family: 'Oswald', sans-serif;
