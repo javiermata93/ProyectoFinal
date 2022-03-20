@@ -56,13 +56,13 @@
 <!--FORMULARIO-->
 <form action="" class="form-contacto">
     <label class="p-form" for="nombreapellido">Nombre & Apellido:</label>
-    <input class="caja-texto" type="text" id="nompreapellido">
+    <input class="caja-texto" type="text" id="nompreapellido" required autocomplete="name">
 
     <label class="p-form" for="contacto">Contacto:</label>
-    <input class="caja-texto" type="number" id="contacto">
+    <input class="caja-texto" type="tel" id="contacto" name="tel" required autocomplete="tel">
 
     <label class="p-form" for="email">Email:</label>
-    <input class="caja-texto" type="text" id="email">
+    <input class="caja-texto" type="text" id="email" required autocomplete="email">
 
     <label class="p-form" for="motivoc">Motivo de contacto:</label>
     <select class="caja-texto" id="motivoc">
@@ -73,10 +73,10 @@
     </select>
 
     <label class="p-form" for="mensaje">Mensaje:</label>
-    <textarea class="caja-msj" id="mensaje"></textarea>
+    <textarea class="caja-msj" id="mensaje" required></textarea>
 
 
-    <div class="btn-group" role="group">
+    <div class="btn-form">
         <input data-aos="zoom-in" class="form-button" type="submit" value="Enviar mensaje">
         <input data-aos="zoom-in" class="form-button" type="reset" value="Eliminar">
     </div>   

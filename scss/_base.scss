@@ -57,6 +57,8 @@ h4{
 
 .caja-texto{
     font-family: 'Oswald', sans-serif;
+    color: $color-texto;
+    padding: 10px 30px 10px 30px;
     letter-spacing: 2px;
     font-weight: 400;
     font-size: 22px;
@@ -114,4 +116,11 @@ h4{
 
 .div-titulo-h2{
     @include div-titulos(3px solid $color-principal, 600px)
+}
+
+.btn-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 350px;
 }
