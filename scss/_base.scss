@@ -124,3 +124,38 @@ h4{
     justify-content: space-between;
     min-width: 350px;
 }
+
+/*FAQ*/
+.accordion{
+padding-top: 40px;
+padding-bottom: 60px;
+}
+
+.accordion-button:not(.collapsed){
+    color: $color-texto;
+    background-color:rgb(243, 243, 243);
+}
+
+.accordion-button:focus {
+    color: $color-destaque;
+    box-shadow: 0 0 0 0.1rem $color-destaque;
+}
+
+.accordion-button{
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+.texto-accordion-destaque{
+    color: $color-principal;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+.accordion-body{
+    text-align: justify;
+}

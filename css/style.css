@@ -725,6 +725,35 @@ h4 {
   justify-content: space-between;
   min-width: 350px; }
 
+/*FAQ*/
+.accordion {
+  padding-top: 40px;
+  padding-bottom: 60px; }
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: #f3f3f3; }
+
+.accordion-button:focus {
+  color: #EA3546;
+  box-shadow: 0 0 0 0.1rem #EA3546; }
+
+.accordion-button {
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-style: italic; }
+
+.texto-accordion-destaque {
+  color: #FBC638;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-style: italic; }
+
+.accordion-body {
+  text-align: justify; }
+
 /*VER QUE ES Y SI LO USO...*/
 .card {
   border-style: none;
@@ -751,5 +780,7 @@ h4 {
   .row {
     justify-content: center; }
   .form-contacto {
-    padding-left: 0;
-    padding-right: 0; } }
+    padding-left: 5%;
+    padding-right: 5%; }
+  .btn-form {
+    padding: 5px; } }
