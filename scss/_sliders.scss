@@ -1,27 +1,30 @@
 /* slider marcas */
 @mixin white-gradient {
-	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+	background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 $animationSpeed: 90s;
 
 // Animation
 @keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 28))}
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(calc(-250px * 28));
+	}
 }
-
 
 // Styling
 .slider {
 	background: white;
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
 	height: 100px;
 	margin: auto;
-	overflow:hidden;
+	overflow: hidden;
 	position: relative;
 	width: 100%;
-	
+
 	&::before,
 	&::after {
 		@include white-gradient;
@@ -31,7 +34,7 @@ $animationSpeed: 90s;
 		width: 200px;
 		z-index: 2;
 	}
-	
+
 	&::after {
 		right: 0;
 		top: 0;
@@ -42,59 +45,56 @@ $animationSpeed: 90s;
 		left: 0;
 		top: 0;
 	}
-	
+
 	.slide-track {
 		animation: scroll $animationSpeed linear infinite;
 		display: flex;
 		width: calc(250px * 100);
 	}
-	
+
 	.slide {
-        display: flex;
-        align-items: center;
-        justify-items: center;
+		display: flex;
+		align-items: center;
+		justify-items: center;
 		height: 100px;
 		width: 250px;
 	}
 }
 
-.slider-img{
-    max-height: 60px;
-    max-width: 120px;
-    filter: grayscale(100%);
+.slider-img {
+	max-height: 60px;
+	max-width: 120px;
+	filter: grayscale(100%);
 }
-
-
-
-
-
 
 /* slider products */
 
-
 @mixin white-gradient {
-	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+	background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 $animationSpeed: 90s;
 
 // Animation
 @keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 28))}
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(calc(-250px * 28));
+	}
 }
-
 
 // Styling
 .slider-p {
 	background: white;
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
 	height: 370px;
 	margin: auto;
-	overflow:hidden;
+	overflow: hidden;
 	position: relative;
 	width: 100%;
-	
+
 	&::before,
 	&::after {
 		@include white-gradient;
@@ -104,7 +104,7 @@ $animationSpeed: 90s;
 		width: 200px;
 		z-index: 2;
 	}
-	
+
 	&::after {
 		right: 0;
 		top: 0;
@@ -115,23 +115,23 @@ $animationSpeed: 90s;
 		left: 0;
 		top: 0;
 	}
-	
+
 	.slide-p-track {
 		animation: scroll $animationSpeed linear infinite;
 		display: flex;
 		width: calc(350px * 4);
 	}
-	
+
 	.slide-p {
-        display: flex;
-        align-items: center;
-        justify-items: center;
+		display: flex;
+		align-items: center;
+		justify-items: center;
 		height: 370px;
 		width: 250px;
 	}
 }
 
-.slider-p-img{
-    max-height: 350px;
-    max-width: 250px;
+.slider-p-img {
+	max-height: 350px;
+	max-width: 250px;
 }

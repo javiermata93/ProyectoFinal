@@ -1,71 +1,63 @@
 /* IMPORT FONT */
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap');
-@import './variables.scss';
-@import './header';
-@import './footer';
-@import './sections';
-@import './botones';
-@import'./sliders';
-@import'./media';
-@import'./base';
-
-
-/*VER QUE ES Y SI LO USO...*/
-.card{
-    border-style: none;
-    background-color: transparent;
-}
-
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap");
+@import "./variables.scss";
+@import "./header";
+@import "./footer";
+@import "./sections";
+@import "./botones";
+@import "./sliders";
+@import "./media";
+@import "./base";
 
 /* PANTALLAS PEQUEÑAS */
-@media only screen and (max-width:991px) {
+@media only screen and (max-width: 991px) {
+	/*VER QUE ES Y SI LO USO...*/
+	.container-fluid {
+		padding: 0px 15px 0px 15px;
+	}
 
+	.navbar-nav {
+		align-items: center;
+	}
 
-/*VER QUE ES Y SI LO USO...*/
-    .container-fluid{
-        padding: 0px 15px 0px 15px;
-    }
-    
-    .navbar-nav{
-        align-items: center;
-    }
+	p,
+	label {
+		text-align: justify;
+		font-size: 20px;
+	}
 
+	.seccion-texto,
+	.seccion-texto-ultimo {
+		padding-left: 0;
+		padding-right: 0;
+	}
 
-    p, label{
-        text-align: justify;
-        font-size: 20px;
-    }
-    
-    .seccion-texto, .seccion-texto-ultimo{
-        padding-left: 0;
-        padding-right: 0;
-    }
+	.div-destaque-col {
+		margin: 30px 0 30px 0;
+		width: 90%;
+	}
 
+	.main-button,
+	.main-button-destaque {
+		font-size: 20px;
+	}
 
-    .div-destaque-col{
-        margin: 30px 0 30px 0;
-        width: 90%;
-    }
+	.row {
+		justify-content: center;
+	}
 
-    .main-button, .main-button-destaque{
-    font-size: 20px;
-    }
+	.form-contacto {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
 
-    .row{
-        justify-content: center
-    }
+	.btn-form {
+		padding: 5px;
+	}
 
-    .form-contacto{
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    
-    .btn-form{
-        padding: 5px;
-    }
-
+	/*IMG SETAS*/
+	.promo {
+		margin-bottom: 40px;
+	}
 }

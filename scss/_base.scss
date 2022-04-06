@@ -1,161 +1,161 @@
-*{
-    border: 0;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    /*outline: solid 1px red;*/
+* {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	/*outline: solid 1px red;*/
 }
 
-body{
-    background-color: $color-fundo-oscuro;
+body {
+	background-color: $color-fundo-oscuro;
 }
 
-p, label{
-    text-align: center;
-    color: $color-texto;
-    font-size: 24px;
-    font-family: 'Oswald', sans-serif;
-    line-height: 2;
-    letter-spacing: 1px;
-    font-weight: 400;
-    padding: 30px;
+p,
+label {
+	text-align: center;
+	color: $color-texto;
+	font-size: 24px;
+	font-family: "Oswald", sans-serif;
+	line-height: 2;
+	letter-spacing: 1px;
+	font-weight: 400;
+	padding: 30px;
 }
 
-.p-form{
-    font-size: 30px;
-    font-weight: 500;
-    text-transform: uppercase;
-    font-style: italic;
+.p-form {
+	font-size: 30px;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-style: italic;
 }
 
-@mixin titulos($fw, $color, $ls, $size, $ts){
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    font-weight: $fw;
-    color: $color;
-    letter-spacing: $ls;
-    font-size: $size;
-    text-shadow: $ts;
+@mixin titulos($fw, $color, $ls, $size, $ts) {
+	text-align: center;
+	font-family: "Oswald", sans-serif;
+	text-transform: uppercase;
+	font-weight: $fw;
+	color: $color;
+	letter-spacing: $ls;
+	font-size: $size;
+	text-shadow: $ts;
 }
 
-h1{
-    @include titulos(700, $color-texto-claro, 2px, clamp(1rem, 10vw, 5rem), calc(1px + 0.12vw) calc(1px + 0.12vw) $color-texto);
+h1 {
+	@include titulos(700, $color-texto-claro, 2px, clamp(1rem, 10vw, 5rem), calc(1px + 0.12vw) calc(1px + 0.12vw) $color-texto);
 }
 
-h2{
-    @include titulos(700, $color-texto-claro, 3px, clamp(1rem, 10vw, 3.5rem), calc(0.9px + 0.1vw) calc(0.9px + 0.1vw) $color-texto);
+h2 {
+	@include titulos(700, $color-texto-claro, 3px, clamp(1rem, 10vw, 3.5rem), calc(0.9px + 0.1vw) calc(0.9px + 0.1vw) $color-texto);
 }
 
-h3{
-    @include titulos(500, $color-principal, 4px, clamp(1rem, 8vw, 2.5rem), calc(0.5px + 0.06vw) calc(0.5px + 0.06vw) $color-destaque);
+h3 {
+	@include titulos(500, $color-principal, 4px, clamp(1rem, 8vw, 2.5rem), calc(0.5px + 0.06vw) calc(0.5px + 0.06vw) $color-destaque);
 }
 
-h4{
-    @include titulos(500, $color-texto, 4px, clamp(0.8rem, 6vw, 1.5rem), none);
+h4 {
+	@include titulos(500, $color-texto, 4px, clamp(0.8rem, 6vw, 1.5rem), none);
 }
 
-.caja-texto{
-    font-family: 'Oswald', sans-serif;
-    color: $color-texto;
-    padding: 10px 30px 10px 30px;
-    letter-spacing: 2px;
-    font-weight: 400;
-    font-size: 22px;
-    background-color: $color-fundo-claro;
-    width: 100%;
-    height: 50px;
-    border-radius: 10px;
-    border: 2px solid $color-footer;
-    -webkit-box-shadow: -0.5px -1px 5px -2.5px $color-footer;
-    -moz-box-shadow: -0.5px -1px 5px -2.5px $color-footer;
-    box-shadow: -0.5px -1px 5px -2.5px $color-footer;
-    &:hover{
-        border: 2px solid $color-destaque;
-        -webkit-box-shadow: -0.5px -1px 19px -2.5px $color-destaque;
-        -moz-box-shadow: -0.5px -1px 19px -2.5px $color-destaque;
-        box-shadow: -0.5px -1px 19px -2.5px $color-destaque;
-    }
-    &:focus{
-        outline: $color-destaque;
-        border: 2px solid $color-destaque;
-        -webkit-box-shadow: -0.5px -1px 19px -2.5px $color-destaque;
-        -moz-box-shadow: -0.5px -1px 19px -2.5px $color-destaque;
-        box-shadow: -0.5px -1px 19px -2.5px $color-destaque;
-    }
+.caja-texto {
+	font-family: "Oswald", sans-serif;
+	color: $color-texto;
+	padding: 10px 30px 10px 30px;
+	letter-spacing: 2px;
+	font-weight: 400;
+	font-size: 22px;
+	background-color: $color-fundo-claro;
+	width: 100%;
+	height: 50px;
+	border-radius: 10px;
+	border: 2px solid $color-footer;
+	-webkit-box-shadow: -0.5px -1px 5px -2.5px $color-footer;
+	-moz-box-shadow: -0.5px -1px 5px -2.5px $color-footer;
+	box-shadow: -0.5px -1px 5px -2.5px $color-footer;
+	&:hover {
+		border: 2px solid $color-destaque;
+		-webkit-box-shadow: -0.5px -1px 19px -2.5px $color-destaque;
+		-moz-box-shadow: -0.5px -1px 19px -2.5px $color-destaque;
+		box-shadow: -0.5px -1px 19px -2.5px $color-destaque;
+	}
+	&:focus {
+		outline: $color-destaque;
+		border: 2px solid $color-destaque;
+		-webkit-box-shadow: -0.5px -1px 19px -2.5px $color-destaque;
+		-moz-box-shadow: -0.5px -1px 19px -2.5px $color-destaque;
+		box-shadow: -0.5px -1px 19px -2.5px $color-destaque;
+	}
 }
 
-.caja-msj{
-    @extend .caja-texto;
-    min-height: 200px;
-    margin-bottom: 80px;
+.caja-msj {
+	@extend .caja-texto;
+	min-height: 200px;
+	margin-bottom: 80px;
 }
 
-@mixin div-titulos($border, $width){
-    position: absolute; 
-    left: 50%;
-    transform:translate(-50%, -150px) skewX(-15deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: $color-destaque;
-    border: $border;
-    -webkit-box-shadow: 1px 1px 22px 1.5px black;
-    -moz-box-shadow: 1px 1px 22px 1.5px black;
-    box-shadow: 1px 1px 22px 1.5px black;
-    border-radius: 10px;
-    height: 110px;
-    max-width: $width;
-    width: 80%;
+@mixin div-titulos($border, $width) {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -150px) skewX(-15deg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: $color-destaque;
+	border: $border;
+	-webkit-box-shadow: 1px 1px 22px 1.5px black;
+	-moz-box-shadow: 1px 1px 22px 1.5px black;
+	box-shadow: 1px 1px 22px 1.5px black;
+	border-radius: 10px;
+	height: 110px;
+	max-width: $width;
+	width: 80%;
 }
 
-
-.div-titulo-h1{
-    @include div-titulos(5px solid $color-principal, 1000px)
+.div-titulo-h1 {
+	@include div-titulos(5px solid $color-principal, 1000px);
 }
 
-.div-titulo-h2{
-    @include div-titulos(3px solid $color-principal, 600px)
+.div-titulo-h2 {
+	@include div-titulos(3px solid $color-principal, 600px);
 }
 
-.btn-form{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    min-width: 350px;
+.btn-form {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	min-width: 350px;
 }
 
 /*FAQ*/
-.accordion{
-padding-top: 40px;
-padding-bottom: 60px;
+.accordion {
+	padding-top: 40px;
+	padding-bottom: 60px;
 }
 
-.accordion-button:not(.collapsed){
-    color: $color-texto;
-    background-color:rgb(243, 243, 243);
+.accordion-button:not(.collapsed) {
+	color: $color-texto;
+	background-color: rgb(243, 243, 243);
 }
 
 .accordion-button:focus {
-    color: $color-destaque;
-    box-shadow: 0 0 0 0.1rem $color-destaque;
+	color: $color-destaque;
+	box-shadow: 0 0 0 0.1rem $color-destaque;
 }
 
-.accordion-button{
-    font-size: 22px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-style: italic;
+.accordion-button {
+	font-size: 22px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-style: italic;
 }
 
-.texto-accordion-destaque{
-    color: $color-principal;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-style: italic;
+.texto-accordion-destaque {
+	color: $color-principal;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-style: italic;
 }
 
-.accordion-body{
-    text-align: justify;
+.accordion-body {
+	text-align: justify;
 }
